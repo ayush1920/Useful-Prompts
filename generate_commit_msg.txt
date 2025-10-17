@@ -3,3 +3,5 @@
 2. For each changed file, use git diff <filename> to read the changes, then provide a concise summary of what was modified.
 
 3. Finally, create a commit message with emojis for sections and unicode bullet points (•) for sub-items, summarizing the overall changes.
+
+4. If any major new feature is added create a seperete section describing the features and enhancements.

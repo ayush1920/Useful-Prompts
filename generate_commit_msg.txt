@@ -1,0 +1,5 @@
+1. First, get the number of files changed in the current working directory using git status --porcelain and count the modified/deleted files.
+
+2. For each changed file, use git diff <filename> to read the changes, then provide a concise summary of what was modified.
+
+3. Finally, create a commit message with emojis for sections and unicode bullet points (•) for sub-items, summarizing the overall changes.

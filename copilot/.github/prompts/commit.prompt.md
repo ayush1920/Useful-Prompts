@@ -1,7 +1,7 @@
 ---
-mode: 'ask'
+mode: 'agent'
 scope: 'workspace'
-tools: []
+tools: ['edit', 'runNotebooks', 'search', 'new', 'runCommands', 'runTasks', 'usages', 'vscodeAPI', 'problems', 'changes', 'testFailure', 'openSimpleBrowser', 'fetch', 'githubRepo', 'extensions', 'todos', 'runTests']
 description: 'Generate a concise, conventional commit message and exact git commands.'
 ---
 
@@ -40,6 +40,8 @@ Hard rules
 10. If intent for a file is unclear, use "minor formatting/whitespace" or "unspecified code change" instead of guessing.
 11. If a major feature is present (is_major_feature), add a Features section with a short description and impact.
 12. Output must NOT contain testing recommendations or manual QA steps.
+13. Give the commit message command in codeblock as output like,
+git commit -m "..."
 
 Output format (exact)
 Return a JSON-like block or plain text containing:

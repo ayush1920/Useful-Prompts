@@ -2,20 +2,20 @@
 mode: 'ask'
 scope: 'workspace'
 tools: []
-description: 'Produce a short, plain-text explanation with 1–2 tiny examples (no workspace references).'
+description: 'Produce a short, explanation with 1–2 tiny examples (no workspace references).'
 ---
-
-# Prompt: text (trigger: @text)
-
-When the user starts a message with `@text`, respond only with a concise, standalone plain-text explanation.
+Respond only with a concise, standalone explanation.
 Structure the response exactly as:
-1) One-line definition.
-2) Two concise bullet points (core details).
-3) One very short example (one sentence).
+1) use #selection if selection is valid
+2) One-line definition.
+3) Two concise bullet points (core details).
+4) One very short example (one sentence).
+5) Code snippets if required.
+
 
 Rules:
 - Do NOT reference workspace files, paths, or execution context.
-- Keep output ≤ 6 short sentences and avoid code blocks.
+- Keep output ≤ 16 short sentences.
 
 Parameters: `input` (topic or question).
 

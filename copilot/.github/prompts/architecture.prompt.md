@@ -1,12 +1,9 @@
 ---
 mode: 'agent'
 scope: 'workspace'
-tools: ['githubRepo','search/codebase']
+tools: ['search/codebase', 'runCommands', 'fetch', 'githubRepo']
 description: 'Create or update architecture docs with mermaid diagrams embedded in Markdown.'
 ---
-
-# Prompt: architecture (trigger: @architecture)
-
 When invoked, produce architecture documentation that includes self-contained mermaid diagrams and explanatory sections. This prompt may read repository code to infer components and interactions when a filename or selection is provided.
 
 Output structure:

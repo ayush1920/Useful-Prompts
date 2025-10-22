@@ -10,14 +10,12 @@ description: 'Produce a longer plain-text explanation with multiple examples and
 When the user starts a message with `@text_long`, produce a developer-focused explanation containing:
 1) One-line definition.
 2) Short explanation (3–5 sentences).
-3) Three concise examples (1 sentence each).
+3) Consise Examples with code if required.
 4) Two common pitfalls (bulleted).
-5) Two recommended next-steps or readings (titles only).
+5) Focus on code more logic more.
 
 Rules:
-- Do NOT reference workspace files or execution environment.
 - Keep language compact and actionable.
 
 Parameters: `input` (topic), `depth` (optional: 'medium'|'deep').
 
-Example: `@text_long Explain the circuit-breaker pattern`

@@ -36,12 +36,15 @@ Hard rules
      • <file/path> — one-line summary (focus on intent)
    - Features (🚀) — only if is_major_feature true; provide short impact statement
    - Notes / Breaking (⚠️) — only if relevant (explicitly state breaking changes)
-9. Keep body short: aim for ≤ 12 lines. Use terse language.
+9. Keep body short: aim for ≤ 24 lines. Use terse language.
 10. If intent for a file is unclear, use "minor formatting/whitespace" or "unspecified code change" instead of guessing.
 11. If a major feature is present (is_major_feature), add a Features section with a short description and impact.
 12. Output must NOT contain testing recommendations or manual QA steps.
-13. Give the commit message command in codeblock as output like,
+13. The commit message can have multiple sections like Fetures, changes, Notes, etc. It is even preffered if different types of changes like bug and features are there, seperate  section are produced.
+15. Bug fixes takes higher priority than features.
+16. Give the commit message command in codeblock as output like,
 git commit -m "..."
+
 
 Output format (exact)
 Return a JSON-like block or plain text containing:
